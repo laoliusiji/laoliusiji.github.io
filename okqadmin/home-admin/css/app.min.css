@@ -14121,3 +14121,18 @@ ul.jqtree-tree ul.jqtree_common {
 .error-text-min {
 	float: right
 }
+
+#top-title{
+	z-index: 6;
+}
+
+.header{
+	background-image: url(../../homepage/images/head_bg.png);
+	background-size: 100% 100%;
+	position: fixed;
+	z-index: 1;
+}
+.header--scrolled{
+	/*background: ;*/
+	
+}

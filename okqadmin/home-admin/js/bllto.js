@@ -6,8 +6,6 @@ zb3();
 zb4();
 zb5();
 zb6();
-
-
 function echarts_3() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('echart3'));
@@ -24,7 +22,7 @@ function echarts_3() {
 	legend: {
 	
 		//icon: 'vertical',
-			data: ['白蛾', '飞虫'],
+			data: ['温度', '湿度','光照'],
         //align: 'center',
        // right: '35%',
 		top:'0',
@@ -82,7 +80,7 @@ function echarts_3() {
 		}
 	}],
 	series: [{
-		name: '白蛾',
+		name: '温度',
 		type: 'line',
 		smooth: true,
 		symbol: 'circle',
@@ -115,7 +113,7 @@ function echarts_3() {
 		},
 		data: [220, 182, 191, 134, 150, 120, 110, 125, 145, 122, 165, 122]
 	}, {
-		name: '飞虫',
+		name: '湿度',
 		type: 'line',
 		smooth: true,
 		symbol: 'circle',
@@ -147,6 +145,39 @@ function echarts_3() {
 			}
 		},
 		data: [120, 110, 125, 145, 122, 165, 122, 220, 182, 191, 134, 150]
+	}, {
+		name: '光照',
+		type: 'line',
+		smooth: true,
+		symbol: 'circle',
+		symbolSize: 5,
+		showSymbol: false,
+		lineStyle: {
+			normal: {
+				width: 2
+			}
+		},
+		areaStyle: {
+			normal: {
+				color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+					offset: 0,
+					color: 'rgba(139, 22,106, 0.3)'
+				}, {
+					offset: 0.8,
+					color: 'rgba(139, 22,106, 0)'
+				}], false),
+				shadowColor: 'rgba(0, 0, 0, 0.1)',
+				shadowBlur: 10
+			}
+		},
+		itemStyle: {
+			normal: {
+				color: 'rgb(71,229,231)',
+				borderColor: 'rgba(0,36,212,0.2)',
+				borderWidth: 12
+			}
+		},
+		data: [20, 110, 25, 45, 122, 65, 122, 20, 82, 191, 34, 150]
 	}]
 };
 
@@ -337,5 +368,185 @@ option = {
             myChart.resize();
         });
     }
+function zb4() {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('zb4'));
+		var v1=298//男消费
+		var v2=523//女消费
+		var v3=v1+v2//总消费 
+option = {	
+    series: [{
+		
+        type: 'pie',
+       radius: ['60%', '70%'],
+        color:'#62c98d',
+        label: {
+            normal: {
+                position: 'center'
+            }
+        },
+        data: [{
+            value: v2,
+            name: '女消费',
+            label: {
+                normal: {
+                    formatter: v2 +'',
+                    textStyle: {
+                        fontSize: 20,
+						color:'#fff',
+                    }
+                }
+            }
+        }, {
+            value: v1,
+            name: '男消费',
+            label: {
+                normal: {
+                 formatter : function (params){
+                return '占比'+Math.round( v2/v3*100)+ '%'
+            },
+                    textStyle: {
+                        color: '#aaa',
+                        fontSize: 12
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgba(255,255,255,.2)'
+                },
+                emphasis: {
+                    color: '#fff'
+                }
+            },
+        }]
+    }]
+};
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+function zb5() {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('zb5'));
+		var v1=298//男消费
+		var v2=523//女消费
+		var v3=v1+v2//总消费 
+option = {	
+    series: [{
+		
+        type: 'pie',
+       radius: ['60%', '70%'],
+        color:'#62c98d',
+        label: {
+            normal: {
+                position: 'center'
+            }
+        },
+        data: [{
+            value: v2,
+            name: '女消费',
+            label: {
+                normal: {
+                    formatter: v2 +'',
+                    textStyle: {
+                        fontSize: 20,
+						color:'#fff',
+                    }
+                }
+            }
+        }, {
+            value: v1,
+            name: '男消费',
+            label: {
+                normal: {
+                 formatter : function (params){
+                return '占比'+Math.round( v2/v3*100)+ '%'
+            },
+                    textStyle: {
+                        color: '#aaa',
+                        fontSize: 12
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgba(255,255,255,.2)'
+                },
+                emphasis: {
+                    color: '#fff'
+                }
+            },
+        }]
+    }]
+};
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+function zb6() {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('zb6'));
+		var v1=298//男消费
+		var v2=523//女消费
+		var v3=v1+v2//总消费 
+option = {	
+    series: [{
+		
+        type: 'pie',
+       radius: ['60%', '70%'],
+        color:'#62c98d',
+        label: {
+            normal: {
+                position: 'center'
+            }
+        },
+        data: [{
+            value: v2,
+            name: '女消费',
+            label: {
+                normal: {
+                    formatter: v2 +'',
+                    textStyle: {
+                        fontSize: 20,
+						color:'#fff',
+                    }
+                }
+            }
+        }, {
+            value: v1,
+            name: '男消费',
+            label: {
+                normal: {
+                 formatter : function (params){
+                return '占比'+Math.round( v2/v3*100)+ '%'
+            },
+                    textStyle: {
+                        color: '#aaa',
+                        fontSize: 12
+                    }
+                }
+            },
+            itemStyle: {
+                normal: {
+                    color: 'rgba(255,255,255,.2)'
+                },
+                emphasis: {
+                    color: '#fff'
+                }
+            },
+        }]
+    }]
+};
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
 
 })
