@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>手机端图片移动以及旋转</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="js/m.js"></script>
+	
+	<body>
+		
+		<div  >
+			
+			<ul class="nav">
+				<li>照片书</li>
+				<li></li>
+				<li></li>
+				<li>完成定制</li> 
+			</ul>
+			
+			
+			<div class="photo" id="photo_bg">
+				<div id="wrap">
+					<img  id="wrap_img" src="img/tx.png"/>
+					<input type="file" id="upload_img" name="" id="" value="" style="display: none" />
+				</div>
+			</div>
+			
+			
+			<div class="fooer">
+				<ul>
+					<li>
+						<div class="F_left">
+							<img src="img/footer_06.jpg"/>
+							<p>相册</p>
+						</div>
+						<div class="F_left">
+							<img src="img/footer_03.jpg"/>
+							<p>文字</p>
+						</div>
+					</li>
+					<li>
+						<span>上一页</span>
+						<span>下一页</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="btns"> 
+				<ul>
+					<li id="btn1" >换图</li>
+					<li id="btn2">旋转90°</li>
+					<li id="btn3">复位</li>
+					<li id="btn4">放大</li>
+					<li id="btn5">缩小</li>
+					<li id="btn6">左转1度</li>
+					<li id="btn7">右转1度</li>
+					<li id="btn8"><a href="img/11.jpg" download="case.png" id="download_img">下载原图</a></li>
+					<li id="btn9">保存</li>
+				</ul>
+			</div>
+			
+			
+			
+			<div id="save">
+	      	
+	     	 </div>
+			
+		</div>
+      
+      
+      <!--<div class="all_template">
+        <p>全部模板</p>
+        <ul>
+          <li><img src="img/22.png" /></li>
+           <li><img src="img/33.png" /></li>
+        </ul>
+      
+      </div>-->
+        
+		
+			
+		
+	</body>
+	
+	<script>
+      
+      window.onload = function()  { 
+      	
+            var pic_w=$("#wrap_img").width();
+            var pic_h=$("#wrap_img").height();
+            var pic_parent_scoollTop=$(".photo").offset().top;
+            var pic_parent_scoollLeft=$(".photo").offset().left;
+            
+            $("#wrap").css({
+              "height":pic_h,
+              "width":pic_w
+              });
+        
+//          console.log($("#wrap").height(),$("#wrap").width(),pic_h,pic_w,pic_parent_scoollTop,pic_parent_scoollLeft)
+
+            var cont=$("#wrap");    
+              var contW=$("#wrap").width();
+              var contH=$("#wrap").height();            
+              var startX,startY,sX,sY,moveX,moveY;        
+              var winW=$(window).width();    
+              var winH=$(window).height();
+              var body=$("body");
+
+
+              cont.on({
+                  touchstart:function(e){   
+                    e.preventDefault();
+                      startX = e.originalEvent.targetTouches[0].pageX+pic_parent_scoollLeft;     
+                      startY = e.originalEvent.targetTouches[0].pageY+pic_parent_scoollTop;    
+                    //  console.log("startX="+startX+"************startY="+startY);
+                      sX=$(this).offset().left;
+                      sY=$(this).offset().top;
+//                    console.log("sX="+sX+"***************sY="+sY);
+                      leftX=startX-sX;
+                      rightX=winW-contW+leftX;
+                      topY=startY-sY;
+                      bottomY=winH-contH+topY;           
+                      },
+                  touchmove:function(e){   
+                      e.preventDefault();
+                      moveX=e.originalEvent.targetTouches[0].pageX;
+                      moveY=e.originalEvent.targetTouches[0].pageY;
+                   
+                      //console.log("moveX="+moveX+"************moveY="+moveY);
+
+                    /*  if(moveX<leftX){moveX=leftX;}                                
+                      if(moveX>rightX){moveX=rightX;}
+                      if(moveY<topY){moveY=topY;}
+                      if(moveY>bottomY){moveY=bottomY;}*/
+                    //距离模板的位置
+//                   console.log(moveX+sX-startX)
+//                   console.log(moveY+sY-startY)
+
+                      $(this).css({
+                          "left":moveX+sX-startX,
+                          "top":moveY+sY-startY,                    
+                          })
+                      },
+                	
+
+              })
+
+
+
+              //换图开始
+
+              $("#btn1").click(function(){
+                  console.log(12)
+                  $("#upload_img").click();   
+                     $("#upload_img").change(function(res){
+                       var file = this.files[0];
+                       if (window.FileReader) {    
+                         var reader = new FileReader();    
+                         reader.readAsDataURL(file);    
+                         //监听文件读取结束后事件    
+                         reader.onloadend = function (e) {
+                           $("#wrap_img").attr("src",e.target.result); 
+                          } 
+                       } 
+                     })
+
+              })
+
+              //换图结束
+
+              //旋转90%开始
+              var r=0;
+              $("#btn2").click(function(){
+                  r += 90;
+                  $("#wrap_img").css('transform', 'rotate(' + r + 'deg)');
+              })
+              //旋转90%结束
+
+              //放大 缩小 开始
+              var images1=document.getElementById("wrap_img")
+              $("#btn4").click(function(){
+                  var height = images1.height;
+                  var width = images1.width;
+                  console.log(width)
+                  console.log(height)
+                  if((height <= height * 2) || (width <= width * 2)) {
+                      images1.height = images1.height + 20;
+                      images1.width = images1.width + 20;
+                  }
+              })
+              $("#btn5").click(function(){
+                  if((images1.width > 100) || (images1.height > 100)) {
+                      images1.height = images1.height - 20;
+                      images1.width = images1.width - 20;
+                  }
+              })
+
+              //放大 缩小 结束
+
+              //左右转动1度开始
+              var rr=0;
+               $("#btn6").click(function(){
+                  rr -= 1;
+                  $("#wrap_img").css('transform', 'rotate(' + rr + 'deg)');
+              })
+               $("#btn7").click(function(){
+                  rr += 1;
+                  $("#wrap_img").css('transform', 'rotate(' + rr + 'deg)');
+              })
+
+              //左右转动1度结束
+
+
+              //保存图像开始
+
+              $("#btn9").click(function(){
+                  html2canvas($("#photo_bg"), {
+                      onrendered: function(canvas) {
+                          //把截取到的图片替换到a标签的路径下载
+                          $("#download").attr('href',canvas.toDataURL());
+                          console.log(canvas.toDataURL())
+                          //下载下来的图片名字
+                          $("#download").attr('download','share.png') ; 
+                          
+                          var save=document.getElementById("save");
+                          save.appendChild(canvas);
+                      }
+//          可以带上宽高截取你所需要的部分内容
+//          			,
+//           			width: 300,
+//           			height: 300
+                  });
+              });
+              //保存图像结束
+              //<!--<img src="{:file_get_contents('./uploads/15524697776981')}">-->
+
+            //选中模板开始
+            for(var i=0;i<$(".all_template ul li").length;i++){
+              //console.log(i)
+              $(".all_template ul li").eq(i).click(function(){
+                  //console.log($(this).find('img').attr("src"))
+                var src=$(this).find('img').attr("src");
+                $(".photo").css("background-image","url("+src+")");
+                //console.log($(".photo").css("background-image"))
+              })
+            }
+            //选中模板结束
+      	
+      };
+      
+      
+	</script>
+</html>

@@ -1,0 +1,251 @@
+ 	/*公共样式*/
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+span,
+i,
+em,
+strong,
+button,
+table,
+textarea,
+input,
+b,
+nav,
+footer,
+form,
+frame,
+img,
+select {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	border: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	outline: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-style: normal;
+	text-underline: none;
+}
+
+html {
+	-webkit-overflow-scrolling: touch;
+}
+
+body {
+	/*font-family: "Arial","Microsoft YaHei","黑体","宋体","sans-serif";*/
+	background: #fff;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+a:hover {
+	text-decoration: none
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:after,
+.clearfix:before {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+	width: 0;
+}
+
+.Container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+[v-cloak] {
+    display: none;
+}
+.inner{
+	width: 100%;
+	margin: 0 auto;
+}
+
+ 	
+ 	
+*{
+  	margin:0;
+    padding:0;
+  }
+  body{
+  	width:100%;
+    height:100vh;
+    overflow:hidden;
+  }
+  #app{
+  	position: relative;
+  }
+.photo{
+    width: 660px;
+    height: 875px;
+    background: url(../img/22.png);
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -330px;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+
+#wrap_img{
+	/*height: 355px;*/
+	height: auto;
+	position: absolute;
+	z-index: -1;
+}
+#wrap{
+	/*因为要拖动这个盒子  这是无赖的方法*/
+	width: 1000%;
+	height: 1000%;
+	position: relative;
+	top:0;
+	left: 0;
+	    /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+.btns{
+    position: absolute;
+    top: 9rem;
+    right: 0;
+}
+.btns li{margin: 5px;padding: 5px;
+    list-style: none;
+    margin: 10px 10px;
+    color: #303030;
+    font-size: 0.3rem;
+    float: left;
+    border: 1px solid #989898;
+}
+.btns ul li a{
+	font-size: 0.3rem;
+	color: #303030;
+	text-decoration: none;
+}
+  
+  .all_template ul{
+  	padding-top:200px;
+  }
+  .all_template ul li{
+    list-style: none;
+  	width:200px;
+    height:300px;
+    float:left;
+    margin-left:50px;
+  }
+  .all_template ul li img{
+  	width:100%;
+    height:100%
+  }
+		
+
+.nav{
+	display: flex;
+}
+.nav li{
+	flex: 1;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 1rem;
+}
+.fooer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1rem;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+}
+.fooer ul li{
+	width: 50%;
+	float: left;
+	font-size: 0.22rem;
+}
+.fooer ul li .F_left{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.fooer ul li .F_left img{
+	width: 0.4rem;
+	height: 0.42rem;
+	display: inline-block;
+}
+.fooer ul li .F_left{
+	padding-top: 0.15rem;
+}
+.fooer ul li span{
+	display: inline-block;
+    background-color: #56a4ff;
+    width: 40%;
+    text-align: center;
+    line-height: 0.65rem;
+    border-radius: 0.67rem;
+    color: #fff;
+    font-size: 0.3rem;
+    margin-left: 0.3rem;
+}
+.fooer ul li:nth-child(2){
+	padding-top: 0.2rem;
+}
+
+@media (min-width: 750px) {
+    .inner{width: 750px;margin: 0 auto;display: block;}
+}
+
+

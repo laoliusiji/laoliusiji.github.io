@@ -1,0 +1,163 @@
+body{font-family: '微软雅黑';  }
+.line{display:block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+html{ height: 100%;}
+li{ list-style: none;}
+a{ cursor: pointer;}
+.middleBox{ width: calc(58% - 2px); overflow: hidden;  float: left; margin: 0 1%; margin-left: 21%;}
+#div{width:100%;height:640px;overflow:hidden;position:relative;border:1px solid #000; border-radius: 0px 0px 5px 5px; }
+.postA{
+    position: absolute!important;
+    z-index: 9;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #cccccc;
+    left: 10px;
+    top: 10px;
+    color: #000;
+}
+.loginButton{
+    background-color: #f0ad4e;
+    border: 1px solid #eea236;
+    color: #fff!important;
+    height: 20px!important;
+    line-height: 1px!important;
+    margin-top: 10px;
+}
+.loginButton:hover{
+    background-color: #eea236!important;
+}
+.postA:hover{
+    text-decoration : none ;
+    background-color: #eeeeee;
+    color: #000;
+}
+
+.mainTitleBox{
+    width:100%;overflow:hidden;position:relative;border:1px solid #666; 
+    background-color: #666666;
+    margin-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 15px 5px 15px;
+}
+.mainTitleBox2{
+    width:100%;overflow:hidden;position:relative;border:1px solid #666; 
+    background-color: #666666;
+    margin-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 10px;
+}
+.mainTitleBox3{
+    width:100%;overflow:hidden;position:relative;border:1px solid #666; 
+    background-color: #666666;
+    margin-top: 30px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px 10px;
+}
+.mainTitleBox3>h1{
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+.messgeBox{
+    border-top: 1px  dashed #cccccc;
+   
+    margin: 10px 0px;
+    padding: 10px 0px;
+    list-style-type: none;
+}
+.messgeBox>li{
+     overflow: hidden;
+     margin: 5px 0px;
+     border-bottom: 1px dashed #cccccc;
+     padding: 5px 0px;
+}
+.messgeBox>li>div{
+    overflow: hidden;
+    float: left;
+    width: 40px; height: 30px; 
+    text-align: center;
+    font-size: 12px;
+    text-align: center;
+}
+.messgeBox>li>p{
+    overflow: hidden;
+    float: left;
+    width: calc(100% - 60px); 
+    color: #999999;
+    font-size: 12px;
+  
+}
+.messgeBox>li>div>img{
+    width: 50%;
+  
+}
+
+.mainTitleBox2>h1{
+    font-size: 1em;
+    text-align: left;
+    color: #fff;
+    margin-top: 10px;
+}
+.mainTitleBox>h1{
+    font-size: 1.4em;
+    text-align: center;
+    color: #fff;
+}
+.mainTitleBox span{
+    color: #fff;
+}
+.mainTitleBox font{
+    background-color: #00adef;
+    padding: 5px;
+}
+.mainStar{ padding: 15px; border: 1px solid #666666; border-radius: 0px 0px 5px 5px;}
+
+.mainStar ul {
+    padding-left: 0;
+    overflow: hidden;
+   }
+
+.mainStar ul li a {
+    display: block;
+    width: 100%;
+    padding-top: 27px;
+    overflow: hidden;
+   }
+.mainStar ul li.light {
+    background-position: 0 -29px;
+   }
+.mainStar strong{
+    color: #fff;
+    background-color: #5cb85c;
+    padding: 3px 10px 3px 10px;
+    /* margin: 5px 15px; */
+    position: relative;
+    top: 5px;
+    left: 5px
+}
+.messgeForm>textarea{
+    width: 100%;
+}
+#div img{position:absolute;width:100%;cursor:move;}
+.leftdiv{
+    width: 20%;
+    float: left;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, .5);
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    background-color: #fff;
+}
+.rightdiv{
+    width: 19%;
+    float: left;
+    height: 100%;
+    background-color: #fff;
+}
