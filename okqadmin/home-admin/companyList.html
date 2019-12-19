@@ -10,7 +10,15 @@
         <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
         <link rel="stylesheet" href="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
         <link rel="stylesheet" href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css">
+        <!-- Vendor styles -->
+       
+        <link rel="stylesheet" href="vendors/bower_components/sweetalert2/dist/sweetalert2.min.css">
 
+
+        <!-- Demo only -->
+        <link rel="stylesheet" href="demo/css/demo.css">
+        
+         <link rel="stylesheet" type="text/css" href="css/modelk.css"/>
         <!-- App styles -->
         <link rel="stylesheet" href="css/app.min.css">
         <style type="text/css">
@@ -570,7 +578,7 @@
                                         <td></td>
                                         <td></td>
                                         <td>2019-11-19 16:27:45</td>
-                                        <td><button type="button" class="btn btn-success ">修改</button>  &nbsp;<button type="button" class="btn btn-outline-danger">删除</button></td>
+                                        <td><button type="button" class="btn btn-success ">修改</button>  &nbsp;<button type="button" class="btn btn-outline-danger" id="sa-funtion">删除</button></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -690,6 +698,137 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="boody">
+                	<section class="content animated ">
+                <div class="content__inner content__inner--sm cca">
+                    <!--<header class="content__title">
+                        <h1>Add new contact</h1>
+                        <small>Nullam id dolor id nibh ultricies vehicula ut id elit</small>
+                    </header>-->
+
+                    <div class="card new-contact">
+                        <div class="new-contact__header">
+                            <div class="zmdi zmdi-edit zmdi-hc-fw new-contact__upload "></div>
+
+                            <!--<img src="demo/img/contacts/user_empty.png" class="new-contact__img" alt="">-->
+                        </div>
+
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>公司名称</label>
+                                        <input type="text" class="form-control" placeholder="i.e. John">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>地址</label>
+                                        <input type="text" class="form-control" placeholder="i.e. Smith">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>联系人</label>
+                                        <input type="text" class="form-control" placeholder="i.e. Google Inc.">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+                                
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>手机</label>
+                                        <input type="text" class="form-control" placeholder="i.e. +14155552671">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>电话</label>
+                                        <input type="text" class="form-control" placeholder="i.e. Web Developer">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>传真</label>
+                                        <input type="text" class="form-control" placeholder="i.e. smith@gmail.com">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+                                 <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>邮箱</label>
+                                        <input type="text" class="form-control" placeholder="i.e. smith@gmail.com">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>网址</label>
+                                        <input type="text" class="form-control" placeholder="i.e. http://smith.com">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>系统名称</label>
+                                        <input type="text" class="form-control" placeholder="i.e. +14155552671">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>版权所属</label>
+                                        <input type="text" class="form-control" placeholder="i.e. +14155552671">
+                                        <i class="form-group__bar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>备注</label>
+                                <textarea class="form-control textarea-autosize"></textarea>
+                                <i class="form-group__bar"></i>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <div class="mt-5 text-center">
+                            	<!--btn-success-->
+                                <a href="#" class="btn btn-light">保存</a>
+                                <a href="#" class="btn btn-light quxiao">取消</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </section>
+                </div>
+                
+                <div class="boody2">
+                	<div class="delete_div">
+                		<img class="delete_div_img" src="img/icpc.png"/>
+                		<div class="title_con">确定要删除吗？</div>
+                		<div class="con__title">
+                			你删除后，将失去这条数据哦。
+                		</div>
+                		<div class="mt-5 text-center butoot">
+                            	<!--btn-success-->
+                                <a href="#" class="btn btn-outline-danger">确认</a>
+                                <a href="#" class="btn btn-light quxiao">取消</a>
+                            </div>
+                	</div>
+                </div>
 
                 <footer class="footer hidden-xs-down">
                     <p>© 郑州欧柯奇仪器制造有限公司.</p>
@@ -758,8 +897,63 @@
         <script src="vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
         <script src="vendors/bower_components/jszip/dist/jszip.min.js"></script>
         <script src="vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="vendors/bower_components/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+        <script src="vendors/bower_components/sweetalert2/dist/sweetalert2.min.js"></script>
 
         <!-- App functions and actions -->
         <script src="js/app.min.js"></script>
+
+        <!-- Demo only -->
+        <script src="demo/js/demo.js"></script>
+
+        <!-- App functions and actions -->
+        <!--<script src="js/app.min.js"></script>-->
+        <script type="text/javascript">
+       
+        $(".btn-success").click(function(){
+        	 var arr = ["bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "fadeInDown", "fadeInDownBig", "fadeInLeft", "fadeInLeftBig", "fadeInRight", "fadeInRightBig", "fadeInUp", "fadeInUpBig", "zoomIn", "zoomInLeft", "zoomInDown", "zoomInRight", "zoomInUp"];
+        var anntant=arr[Math.floor((Math.random() * arr.length))];
+        	$(".content").addClass(anntant);
+        	$(".boody").fadeIn();
+        	
+        })
+        
+//      content
+
+$(".quxiao").click(function(){
+        		$(".boody").fadeOut();
+        		$(".boody2").fadeOut();
+        	})
+//      	$(".btn-success").click(function(){
+//      		$(".boody").fadeIn();
+//      	})
+
+
+
+// Warning Message with function
+            $('#sa-funtion').click(function(){
+                swal({
+                    title: '确定要删除吗?',
+                    text: '你删除后，将失去这条数据哦!',
+                    type: 'warning',
+                    showCancelButton: true,
+                    buttonsStyling: false,
+                    confirmButtonClass: 'btn btn-danger',
+                    confirmButtonText: '删除!',
+                    cancelButtonClass: 'btn btn-light',
+                    cancelButtonText: '取消',
+                    background: 'rgba(0, 0, 0, 0.96)'
+                }).then(function(){
+                    swal({
+                        title: '成功删除',
+                        text: '你已经成功删除这条数据。',
+                        type: 'success',
+                        buttonsStyling: false,
+                        confirmButtonClass: 'btn btn-light',
+                        background: 'rgba(0, 0, 0, 0.96)'
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

@@ -1,0 +1,88 @@
+.boody{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	/*height: 100%;*/
+	background: rgba(0,0,0,0.1);
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.cca{
+	background: rgba(0,0,0,0.9);
+}
+.boody2{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	/*height: 100%;*/
+	background: rgba(0,0,0,0.1);
+	top: 0;
+	left: 0;
+	display: none;
+}
+.delete_div{
+	/*position: absolute;*/
+	top: 30vh;
+	    margin: auto;
+	        box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*display: none;*/
+       /*animation: showSweetAlert .3s;*/
+    position: relative;
+    max-width: 100%;
+	width: 500px;
+	min-height: 258px;
+	border-radius:5px;
+	box-shadow:0 4px 18px rgba(0, 0, 0, .5);
+	background:rgba(0,0,0,0.98);
+}
+.title_con{
+	position: absolute;
+	top: 130px;
+	height: 10px;
+	width: 100%;
+	/*color: red;*/
+	text-align: center;
+	font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    line-height: inherit;
+    margin: 0 0 5px;
+    font-weight: 400;
+	
+}
+.delete_div_img{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 20px;
+	left: 210px;
+	/*margin-right: 60px;*/
+}
+.con__title{
+	font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    color: #545454;
+    word-wrap: break-word;
+	color: rgba(255, 255, 255, .7);
+    font-size: 1rem;
+    font-weight: 400;
+    top: 143px;
+    
+}
+.butoot{
+	position: relative;
+	top: 120px;
+}
