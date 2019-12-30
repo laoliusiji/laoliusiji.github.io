@@ -1,0 +1,733 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="viewport" content="width=1280">
+<link href="{dede:global.cfg_cmspath/}/skin/css/aos.css" rel="stylesheet">
+<link href="{dede:global.cfg_cmspath/}/skin/css/css.css" rel="stylesheet">
+<link href="{dede:global.cfg_cmspath/}/skin/css/style.css" rel="stylesheet">
+<link href="{dede:global.cfg_cmspath/}/skin/css/common.css" rel="stylesheet">
+<script src="{dede:global.cfg_cmspath/}/skin/css/jquery.js"></script>
+<script src="{dede:global.cfg_cmspath/}/skin/js/jquery.superslide.2.1.1.js"></script>
+<script src="{dede:global.cfg_cmspath/}/skin/js/common.js"></script>
+
+<link href="{dede:global.cfg_cmspath/}/skin/css/public.css" rel="stylesheet">
+		<link href="{dede:global.cfg_cmspath/}/skin/css/style.css" rel="stylesheet">
+		<script src="{dede:global.cfg_cmspath/}/skin/js/hm.js"></script>
+		<!--<script src="{dede:global.cfg_cmspath/}/skin/css/jquery.js"></script>-->
+
+
+</head>
+<body>
+<!--顶部开始--> 
+{dede:include filename="head.htm"/} 
+<!--顶部结束--> 
+<!--内页大图开始-->
+<div class="nybanner" style="background-image: url({dede:global.cfg_cmspath/}/skin/images/nybanner6.jpg);">
+  <div class="w1200">
+    <h3>{dede:field name='typeid' function="GetTopTypename(@me)"/}</h3>
+    <span class="en">{dede:field name='typeid' function="GetTopTypenameen(@me)"/}</span> <span class="line"></span></div>
+</div>
+<!--内页大图结束-->
+<div class="wrapper"> 
+  <!--栏目分类开始-->
+  <div class="menu">
+    <ul class="list clearfix">
+      {dede:channel type='son' currentstyle="
+      <li class='hover'><a href='~typelink~' class='nav1'>~typename~<s></s></a></li>
+      "}
+      <li><a class="nav1" href="[field:typeurl/]" title="[field:typename/]">[field:typename/]<s></s></a> </li>
+      {/dede:channel}
+    </ul>
+  </div>
+  <!--栏目分类结束-->
+  <div class="sitepath w1200"><s class="nyIcon"></s>您的位置：{dede:field name='position'/}</div>
+  <!--留言框架开始-->
+ 
+ <!--内容区-->
+		<div class="bodycontd qqbj" style="min-height: 710px;">
+
+			<div class="maplist">
+				<!---->
+				<div class="mapconttab">
+					<div class="mpabig map_tit0" style="display: block;">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/pic41.png">
+						<ul>
+							<li data-left="16.63%" data-top="58.3%" style="left: 16.63%; top: 58.3%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>墨西哥生产基地</p>
+								</div>
+							</li>
+							<li data-left="25.68%" data-top="50.74%" style="left: 25.68%; top: 50.74%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>新泽西生产基地</p>
+								</div>
+							</li>
+							<li data-left="49.68%" data-top="45.91%" style="left: 49.68%; top: 45.91%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>捷克生产基地</p>
+								</div>
+							</li>
+							<li data-left="52.21%" data-top="86.09%" style="left: 52.21%; top: 86.09%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>南非生产基地</p>
+								</div>
+							</li>
+							<li data-left="71.58%" data-top="53.45%" style="left: 71.58%; top: 53.45%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>成都生产基地</p>
+								</div>
+							</li>
+							<li data-left="74.74%" data-top="55.96%" style="left: 74.74%; top: 55.96%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>贵阳生产基地</p>
+								</div>
+							</li>
+							<li data-left="77.76%" data-top="58.31%" style="left: 77.76%; top: 58.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>江门生产基地</p>
+								</div>
+							</li>
+							<li data-left="78.96%" data-top="58.31%" style="left: 78.96%; top: 58.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>佛山生产基地</p>
+								</div>
+							</li>
+							<li data-left="80.56%" data-top="53.35%" style="left: 80.56%; top: 53.35%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>湖州生产基地</p>
+								</div>
+							</li>
+							<li data-left="81.23%" data-top="49.51%" style="left: 81.23%; top: 49.51%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>扬州生产基地</p>
+								</div>
+							</li>
+							<li data-left="82.91%" data-top="46.97%" style="left: 82.91%; top: 46.97%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>青岛生产基地</p>
+								</div>
+							</li>
+							<li data-left="58.24%" data-top="48.01%" style="left: 58.24%; top: 48.01%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>塞尔维亚生产基地</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mpabig map_tit1 hide" style="display: none;">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/pic42.png">
+						<ul>
+							<li data-left="11.04%" data-top="44.54%" style="left: 11.04%; top: 44.54%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>圣何塞研发中心</p>
+								</div>
+							</li>
+							<li data-left="23.92%" data-top="52.11%" style="left: 23.92%; top: 52.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>美国研发中心</p>
+								</div>
+							</li>
+							<li data-left="25.6%" data-top="50.74%" style="left: 25.6%; top: 50.74%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>新泽西研发中心</p>
+								</div>
+							</li>
+							<li data-left="24.72%" data-top="43.31%" style="left: 24.72%; top: 43.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>奥尔维克研发中心</p>
+								</div>
+							</li>
+							<li data-left="50.56%" data-top="43.31%" style="left: 50.56%; top: 43.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>德国研发中心</p>
+								</div>
+							</li>
+							<li data-left="57.04%" data-top="57.07%" style="left: 57.04%; top: 57.07%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>以色列研发中心</p>
+								</div>
+							</li>
+							<li data-left="76.4%" data-top="52.11%" style="left: 76.4%; top: 52.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>武汉研发中心</p>
+								</div>
+							</li>
+							<li data-left="78.6%" data-top="57.21%" style="left: 78.6%; top: 57.21%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>顺德研发中心</p>
+								</div>
+							</li>
+							<li data-left="79.6%" data-top="58.31%" style="left: 79.6%; top: 58.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>深圳研发中心</p>
+								</div>
+							</li>
+							<li data-left="83.92%" data-top="51.61%" style="left: 83.92%; top: 51.61%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>上海研发中心</p>
+								</div>
+							</li>
+							<li data-left="87.12%" data-top="49.63%" style="left: 87.12%; top: 49.63%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>日本研发中心</p>
+								</div>
+							</li>
+							<li data-left="82.96%" data-top="47.15%" style="left: 82.96%; top: 47.15%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>青岛研发中心</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mpabig map_tit2 hide" style="display: none;">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/pic43.png">
+						<ul>
+							<li data-left="16.64%" data-top="37.1%" style="left: 16.64%; top: 37.1%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>加拿大海外公司</p>
+								</div>
+							</li>
+							<li data-left="23.84%" data-top="52.36%" style="left: 23.84%; top: 52.36%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>美国海外公司</p>
+								</div>
+							</li>
+							<li data-left="16.64%" data-top="58.44%" style="left: 16.64%; top: 58.44%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>墨西哥海外公司</p>
+								</div>
+							</li>
+							<!--<li data-left="32.8%" data-top="77.17%"><img src="/assets/images/zghan1.gif" /><div class="mapname"><p>巴西海外公司</p></div></li>-->
+							<li data-left="52.24%" data-top="86.11%" style="left: 52.24%; top: 86.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>南非海外公司</p>
+								</div>
+							</li>
+							<li data-left="44.96%" data-top="39.58%" style="left: 44.96%; top: 39.58%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>英国海外公司</p>
+								</div>
+							</li>
+							<li data-left="50.72%" data-top="43.8%" style="left: 50.72%; top: 43.8%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>德国海外公司</p>
+								</div>
+							</li>
+							<li data-left="46.64%" data-top="45.78%" style="left: 46.64%; top: 45.78%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>法国海外公司</p>
+								</div>
+							</li>
+							<li data-left="49.76%" data-top="45.78%" style="left: 49.76%; top: 45.78%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>捷克海外公司</p>
+								</div>
+							</li>
+							<li data-left="44.96%" data-top="49.63%" style="left: 44.96%; top: 49.63%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>西班牙海外公司</p>
+								</div>
+							</li>
+							<li data-left="53.04%" data-top="52.11%" style="left: 53.04%; top: 52.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>意大利海外公司</p>
+								</div>
+							</li>
+							<li data-left="61.92%" data-top="59.68%" style="left: 61.92%; top: 59.68%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>迪拜海外公司</p>
+								</div>
+							</li>
+							<li data-left="74.08%" data-top="65.88%" style="left: 74.08%; top: 65.88%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>泰国海外公司</p>
+								</div>
+							</li>
+							<li data-left="87.04%" data-top="49.51%" style="left: 87.04%; top: 49.51%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>日本海外公司</p>
+								</div>
+							</li>
+							<li data-left="78.88%" data-top="69.47%" style="left: 78.88%; top: 69.47%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>马来西亚海外公司</p>
+								</div>
+							</li>
+							<li data-left="78.16%" data-top="73.45%" style="left: 78.16%; top: 73.45%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>印度海外公司</p>
+								</div>
+							</li>
+							<li data-left="87.84%" data-top="89.7%" style="left: 87.84%; top: 89.7%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>澳大利亚海外公司</p>
+								</div>
+							</li>
+							<li data-left="27.92%" data-top="91.19%" style="left: 27.92%; top: 91.19%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>阿根廷海外公司</p>
+								</div>
+							</li>
+							<li data-left="58.64%" data-top="38.33%" style="left: 58.64%; top: 38.33%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>俄罗斯海外公司</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="mpabig map_tit3 hide" style="display: none;">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/pic44.png">
+						<ul class="other">
+							<li data-left="16.64%" data-top="37.1%" style="left: 16.64%; top: 37.1%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>加拿大出口产品</p>
+								</div>
+							</li>
+							<li data-left="24.72%" data-top="43.31%" style="left: 24.72%; top: 43.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>奥克维尔出口产品</p>
+								</div>
+							</li>
+							<li data-left="10.92%" data-top="44.54%" style="left: 10.92%; top: 44.54%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>奥克维尔出口产品</p>
+								</div>
+							</li>
+							<li data-left="25.58%" data-top="50.84%" style="left: 25.58%; top: 50.84%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>新泽西出口产品</p>
+								</div>
+							</li>
+							<li data-left="23.92%" data-top="52.11%" style="left: 23.92%; top: 52.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>美国出口产品</p>
+								</div>
+							</li>
+							<li data-left="16.64%" data-top="58.44%" style="left: 16.64%; top: 58.44%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>墨西哥出口产品</p>
+								</div>
+							</li>
+
+							<li data-left="22.32%" data-top="63.28%" style="left: 22.32%; top: 63.28%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>哥斯达黎加出口产品</p>
+								</div>
+							</li>
+							<li data-left="23.12%" data-top="66.13%" style="left: 23.12%; top: 66.13%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>巴拿马出口产品</p>
+								</div>
+							</li>
+							<li data-left="28%" data-top="67.25%" style="left: 28%; top: 67.25%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>委内瑞拉出口产品</p>
+								</div>
+							</li>
+							<li data-left="25.52%" data-top="69.73%" style="left: 25.52%; top: 69.73%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>哥伦比亚出口产品</p>
+								</div>
+							</li>
+							<!--<li data-left="24.72%" data-top="72.21%"><img src="/assets/images/zghan1.gif" /><div class="mapname"><p>美国出口产品</p></div></li>-->
+							<li data-left="25.52%" data-top="74.69%" style="left: 25.52%; top: 74.69%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>秘鲁出口产品</p>
+								</div>
+							</li>
+							<li data-left="32.8%" data-top="77.17%" style="left: 32.8%; top: 77.17%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>巴西出口产品</p>
+								</div>
+							</li>
+							<li data-left="27.92%" data-top="83.5%" style="left: 27.92%; top: 83.5%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>玻利维亚出口产品</p>
+								</div>
+							</li>
+							<li data-left="30.4%" data-top="85.98%" style="left: 30.4%; top: 85.98%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>巴拉圭出口产品</p>
+								</div>
+							</li>
+							<li data-left="28.8%" data-top="89.83%" style="left: 28.8%; top: 89.83%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>乌拉圭出口产品</p>
+								</div>
+							</li>
+							<li data-left="28.16%" data-top="91.07%" style="left: 28.16%; top: 91.07%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>阿根廷出口产品</p>
+								</div>
+							</li>
+							<li data-left="25.44%" data-top="93.42%" style="left: 25.44%; top: 93.42%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>智利出口产品</p>
+								</div>
+							</li>
+							<li data-left="49.76%" data-top="34.5%" style="left: 49.76%; top: 34.5%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>瑞典出口产品</p>
+								</div>
+							</li>
+							<li data-left="44.96%" data-top="39.58%" style="left: 44.96%; top: 39.58%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>英国出口产品</p>
+								</div>
+							</li>
+							<li data-left="49.92%" data-top="42.06%" style="left: 49.92%; top: 42.06%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>德出口产品</p>
+								</div>
+							</li>
+							<!--<li data-left="50.72%" data-top="43.8%"><img src="/assets/images/zghan1.gif" /><div class="mapname"><p>美国出口产品</p></div></li>-->
+							<li data-left="47.28%" data-top="44.54%" style="left: 47.28%; top: 44.54%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>比利时出口产品</p>
+								</div>
+							</li>
+							<li data-left="46.64%" data-top="45.78%" style="left: 46.64%; top: 45.78%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>法国出口产品</p>
+								</div>
+							</li>
+							<li data-left="49.76%" data-top="45.78%" style="left: 49.76%; top: 45.78%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>捷克出口产品</p>
+								</div>
+							</li>
+							<li data-left="47.36%" data-top="48.26%" style="left: 47.36%; top: 48.26%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>瑞士出口产品</p>
+								</div>
+							</li>
+							<li data-left="44.96%" data-top="49.63%" style="left: 44.96%; top: 49.63%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>西班牙出口产品</p>
+								</div>
+							</li>
+							<li data-left="44.96%" data-top="55.96%" style="left: 44.96%; top: 55.96%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>摩洛哥出口产品</p>
+								</div>
+							</li>
+							<li data-left="46.56%" data-top="62.16%" style="left: 46.56%; top: 62.16%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>西班牙出口产品</p>
+								</div>
+							</li>
+							<li data-left="52.24%" data-top="86.11%" style="left: 52.24%; top: 86.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>南非出口产品</p>
+								</div>
+							</li>
+							<!--<li data-left="57.84%" data-top="69.6%"><img src="/assets/images/zghan1.gif" /><div class="mapname"><p>美国出口产品</p></div></li>-->
+							<li data-left="58.64%" data-top="62.16%" style="left: 58.64%; top: 62.16%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>沙特阿拉伯出口产品</p>
+								</div>
+							</li>
+							<li data-left="61.92%" data-top="59.68%" style="left: 61.92%; top: 59.68%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>迪拜出口产品</p>
+								</div>
+							</li>
+							<li data-left="57.04%" data-top="57.07%" style="left: 57.04%; top: 57.07%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>以色列出口产品</p>
+								</div>
+							</li>
+							<li data-left="54.64%" data-top="59.55%" style="left: 54.64%; top: 59.55%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>埃及出口产品</p>
+								</div>
+							</li>
+							<li data-left="53.04%" data-top="52.11%" style="left: 53.04%; top: 52.11%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>意大利出口产品</p>
+								</div>
+							</li>
+							<li data-left="53.84%" data-top="47.15%" style="left: 53.84%; top: 47.15%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>匈牙利出口产品</p>
+								</div>
+							</li>
+							<li data-left="57.04%" data-top="42.18%" style="left: 57.04%; top: 42.18%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>土库曼斯坦出口产品</p>
+								</div>
+							</li>
+							<li data-left="58.08%" data-top="42.18%" style="left: 58.08%; top: 42.18%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>乌兹别克斯坦出口产品</p>
+								</div>
+							</li>
+							<li data-left="58.64%" data-top="38.84%" style="left: 58.64%; top: 38.84%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>俄罗斯出口产品</p>
+								</div>
+							</li>
+							<li data-left="59.52%" data-top="39.58%" style="left: 59.52%; top: 39.58%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>哈萨克斯坦出口产品</p>
+								</div>
+							</li>
+							<li data-left="61.12%" data-top="40.82%" style="left: 61.12%; top: 40.82%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>吉尔吉斯斯坦出口产品</p>
+								</div>
+							</li>
+							<li data-left="60.32%" data-top="42.18%" style="left: 60.32%; top: 42.18%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>塔吉克斯坦出口产品</p>
+								</div>
+							</li>
+							<li data-left="66.72%" data-top="58.31%" style="left: 66.72%; top: 58.31%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>印度出口产品</p>
+								</div>
+							</li>
+							<li data-left="70%" data-top="57.2%" style="left: 70%; top: 57.2%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>孟加拉出口产品</p>
+								</div>
+							</li>
+							<li data-left="74.08%" data-top="65.88%" style="left: 74.08%; top: 65.88%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>泰国出口产品</p>
+								</div>
+							</li>
+							<li data-left="78.16%" data-top="73.45%" style="left: 78.16%; top: 73.45%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>印度出口产品</p>
+								</div>
+							</li>
+							<li data-left="87.84%" data-top="89.7%" style="left: 87.84%; top: 89.7%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>澳大利亚出口产品</p>
+								</div>
+							</li>
+							<li data-left="78.88%" data-top="69.47%" style="left: 78.88%; top: 69.47%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>马来西亚出口产品</p>
+								</div>
+							</li>
+							<li data-left="81.82%" data-top="65.88%" style="left: 81.82%; top: 65.88%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>菲律宾出口产品</p>
+								</div>
+							</li>
+							<li data-left="79.68%" data-top="59.68%" style="left: 79.68%; top: 59.68%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>香港出口产品</p>
+								</div>
+							</li>
+							<li data-left="82.06%" data-top="53.85%" style="left: 82.06%; top: 53.85%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>韩国出口产品</p>
+								</div>
+							</li>
+							<li data-left="87.04%" data-top="49.51%" style="left: 87.04%; top: 49.51%;"><img src="{dede:global.cfg_cmspath/}/skin/images/zghan1.gif">
+								<div class="mapname">
+									<p>日本出口产品</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--切换导航-->
+				<ul class="mapnvalist">
+					<li class="timer scle chost_ed">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon8.png" class="bgimg0">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon9.png" class="bgimg1">
+						<p>生产基地</p>
+					</li>
+					<!--<li class="timer scle ">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon8.png" class="bgimg0">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon9.png" class="bgimg1">
+						<p>国内业务</p>
+					</li>-->
+					<li class="timer scle">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon8.png" class="bgimg0">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon9_1.png" class="bgimg1">
+						<p>研发中心</p>
+					</li>
+					<li class="timer scle">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon8.png" class="bgimg0">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon9_2.png" class="bgimg1">
+						<p>国内业务</p>
+					</li>
+					<li class="timer scle">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon8.png" class="bgimg0">
+						<img src="{dede:global.cfg_cmspath/}/skin/images/icon9_3.png" class="bgimg1">
+						<p>产品出口</p>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<!--列表-->
+			<div class="maplistcont"></div>
+		</div>
+		
+		 <style>
+        .duty {
+            padding: 30px 0px;
+            padding-bottom: 0px;
+        }
+        .duty h2 {
+            color: #ff6634;
+            font-size: 18px;
+            margin-bottom: 30px;
+            text-indent: 36px;
+            font-weight: 700;
+        }
+        .duty ul li {
+            width: 400px;
+            border: 1px solid #e1e1e1;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .duty ul li .detailMessage {
+            padding: 20px 18px 20px 18px;
+        }
+        .duty ul li .detailMessage p {
+            height: 24px;
+            color: #444444;
+            font-size: 14px;
+        }
+        .lxbt{font-weight: bolder;
+            border-bottom: 1px solid #e1e1e1;
+            text-indent: 36px;
+            height: 47px;
+            line-height: 47px;
+            color: #006ac2;
+            border: 1px solid #e1e1e1;
+            font-size: 18px;
+            background-color: #efefef;}
+    </style>
+    <div class="wal">
+        <div class="duty">
+            <h2>欧柯奇中国各责任区划分</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="lxbt">河南地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：河南</p>
+                        <p>业务经理：秦经理  手机（同微信号）：18625526098</p>
+                        <p>电话：0371- 86581650 ；QQ ：3298335523</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">东南地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：浙江、福建、江西</p>
+                        <p>业务经理：雷经理  手机：13017691806</p>
+                        <p>电话：0371-67897873; QQ：3497729499</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">中南地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：广东、广西、湖南、湖北、海南</p>
+                        <p>业务经理：徐经理 手机（同微信号）：13017691976</p>
+                        <p>电话：0371-86581650；QQ ：1203630562</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">西南地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：重庆、四川、贵州、云南、西藏</p>
+                        <p>业务经理：牛经理 手机（同微信号）：15824871688</p>
+                        <p>电话：0371-67897883; QQ：2194661233</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">华东地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：上海、江苏、安徽、山东</p>
+                        <p>业务经理：张经理 手机（同微信号）：15638163618</p>
+                        <p>电话：0371- 67897873; QQ：2890662071</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">华北地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：北京、天津、河北、山西、内蒙古</p>
+                        <p>业务经理：王经理 手机（同微信号）：15516169371</p>
+                        <p>电话：0371-67897883；QQ ：2668827256</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">东北地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：辽宁、吉林、黑龙江</p>
+                        <p>业务经理：雷经理  手机：13017691806</p>
+                        <p>电话：0371-67897883; QQ：2816068569</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">西北地区</div>
+                    <div class="detailMessage">
+                        <p>责任区划分：陕西、甘肃、青海、宁夏、新疆</p>
+                        <p>业务经理：王经理  手机（同微信号）：15638169857</p>
+                        <p>电话：0371-67897873; QQ：2513436949</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="duty">
+            <h2>欧柯奇中国售后</h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="lxbt">速测仪器</div>
+                    <div class="detailMessage" style=" margin-bottom: 10px;">
+                        <p>责任区划分：全国</p>
+                        <p>负责人：苗工；手机（同微信号）：15617617702</p>
+                        <p>电话：0371-86533628；QQ ：2982054687</p>
+                        <p>产品型号：土壤肥料养分速测仪、农药残留速测仪、土壤墒情速测仪、植物病害诊断仪、叶绿素速测仪等</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="lxbt">植保设备</div>
+                    <div class="detailMessage" style=" margin-bottom: 10px;">
+                        <p>责任区划分：全国</p>
+                        <p>业务经理：王工；手机（同微信号）：13213117873</p>
+                        <p>电话：0371-86253770；QQ ：3385249366</p>
+                        <p>产品型号：杀虫灯、虫情测报灯、孢子捕捉器、病虫调查统计器、粘虫板、气象站等</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+ 
+ 
+ 
+ 
+  <!--留言框架结束--> 
+</div>
+
+<div class="backtop " style="display: none; "></div>
+		<script src="{dede:global.cfg_cmspath/}/skin/js/public.js "></script>
+		<script>
+			$(".awx ").attr("href ", "javascript:void(0); ");
+		</script>
+
+		</form>
+		<script>
+			var href = window.location.search;
+			var srtd = href.split("=");
+			numd = srtd.pop();
+			console.log(numd)
+			$(" .mapnvalist li ").eq(numd).click();
+		</script>
+
+<!--页尾开始--> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>
