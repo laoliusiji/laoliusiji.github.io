@@ -57,6 +57,7 @@ a:hover{ color:#06c; text-decoration: none!important}
 .mainbox>ul>li:nth-child(2){ width: 50%;padding: 0}
 
 .boxall{ 
+	position: relative;
 	/*border: 1px solid rgba(25,186,139,.17);*/
  padding:0 .2rem .4rem .15rem;  background: rgba(255,255,255,.04) url(../images/line3.png); background-size: 100% 100%; 
  /*position: relative;*/ 
@@ -306,3 +307,264 @@ body {
 	box-shadow:0 1px 30px rgba(59,255,255,1);
 }
 }
+
+
+
+#radar,.graduateyear,.bar-chart,#courserate,.line-chart,.bars-chart,.radar-chart,.progress1-chart,#mapadd,
+.progress2-chart{
+	height: 100%;
+}
+#mapadd{
+	position:relative;
+}
+#radar .radarkong{
+	height: 17%;
+	position: relative;
+}
+.Totalequipment{
+	margin-right: 18px;
+}
+#radar .radarkong p{
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	
+}
+.SiteStatusList{
+	position: absolute;
+	bottom: 1%;
+	color: #fff;
+	font-size: 12px;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.SiteStatusList li:first-child{
+	margin-left: 22px;
+	color: #fff;
+}
+.SiteStatusList li{
+	margin-right: 20px;
+	color: #fff;
+}
+.SiteStatusList .Statussame{
+	float: left;
+    padding: 5px;
+    margin-top: 2px;
+    margin-right: 5px;
+	
+}
+.SiteStatusList .Statusnormal{
+	background: #4f8bf9;
+}
+.SiteStatusList .Statusemergency{
+	background: #fea31e;
+}
+.SiteStatusList .StatusOffline{
+	background: #959595;
+}
+.SiteStatusList .ThisweekData,.SiteStatusList .ThisweekData{
+	padding: 7px;
+	border-radius: 50%;
+	float: left;
+	cursor: pointer;
+}
+.SiteStatusList .Datasame{
+	background: #39c1f5;
+}
+.SiteStatusList .Defaultgray{
+	color: #959595;
+}
+.SiteStatusList .DataSwitch{
+	background: #555474;
+    border-radius: 10px;
+}
+.tile-size-color{
+	 font-size:12px ;
+    color: #fff;
+}
+.pie-chart{
+	width: 100%;
+	height: 82%;
+}
+/*.map-chart{
+	width: 65%;
+	height: 100%;
+	float: left;
+}*/
+
+
+/* 设备 */
+.equipment-list{
+  width: 100%;
+  max-width: 556px;
+  /* height: 424px; */
+  height: 54.0127%;
+}
+
+.equipment-list-box{
+  position: relative;
+  height: 90%;
+}
+.equipment-list-box-bg{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('http://testfood.cn/agro_monitor/images/main/equipment.png') 50% 90% no-repeat;
+  background-size: 85% 60%;
+}
+.equipment-list-classify{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.equipment-list-classify li{
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .8s;
+}
+.equipment-list-classify li.active{
+  transform: scale(1.1);
+  z-index: 9;
+}
+.equipment-list-classify li img{
+  width: 100%;
+}
+.equipment-list-classify .equipment-tips{
+  position: absolute;
+  top: -40px;
+  left: 0;
+  color: #fff;
+  opacity: 0;
+}
+
+
+.adc_bian{
+	position: absolute;
+	left: 0.163rem;
+	top: 20%;
+	width: 28%;
+	height: 30%;
+	border: solid 0.023rem #18679a;
+	/*background: red;*/
+}
+.adc_bian2{
+	position: absolute;
+	top: 20%;
+	right: 0.986rem;
+	width: 28%;
+	height: 30%;
+	border: solid 0.023rem #18679a;
+	/*background: red;*/
+}
+.adc_bian3{
+	position: absolute;
+	bottom: 0.326rem;
+	left: 0.163rem;
+	width: 28%;
+	height: 30%;
+	border: solid 0.023rem #18679a;
+	/*background: red;*/
+}
+.adc_bian4{
+	position: absolute;
+	bottom: 0.326rem;
+	right: 0.986rem;
+	width: 28%;
+	height: 30%;
+	border: solid 0.023rem #18679a;
+	/*background: red;*/
+}
+.adc_bian>img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.adc_bian2>img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.adc_bian3>img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.adc_bian4>img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.adc_zhi{
+	position: absolute;
+	left: 32%;
+	top: 24%;
+	width: 100px;
+	height: 30%;
+	/*border: solid 0.023rem #18679a;*/
+	/*line-height: 1;*/
+	color: #00f0ff;
+}
+
+
+.title1{
+	position: absolute;
+	text-align: left;
+	width: 100px;
+	left: 0;
+	top: 0;
+	height: 1px;
+	color: #00f0ff;
+	line-height: 10px;
+}
+.title2{
+	position: absolute;
+	text-align: left;
+	left: 0;
+	top: 0;
+	height: 1px;
+	width: 100px;
+	color: #00f0ff;
+	top: 20px;
+	line-height: 10px;
+}
+.title3{
+	position: absolute;
+	text-align: left;
+	left: 0;
+	height: 1px;
+	width: 100px;
+	color: #00f0ff;
+	line-height: 10px;
+	top: 40px;
+}
+.title4{
+	position: absolute;
+	text-align: left;
+	left: 0;
+	height: 1px;
+	width: 100px;
+	/*width: 100px;*/
+	color: #00f0ff;
+	line-height: 10px;
+	top: 60px;
+}
+

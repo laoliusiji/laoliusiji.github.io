@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>index</title>
+<title>智慧农业物联网管理平台</title>
 <script type="text/javascript" src="js/jquery.js"></script>
 <link rel="stylesheet" href="css/comon0.css">
 </head>
@@ -21,27 +21,18 @@ $(document).ready(function(){
 });
 	});
 	</script>
-	<script type="text/javascript" src="js/echarts.min.js"></script> 
+	<script type="text/javascript" src="js/echarts.js"></script> 
 	<script language="JavaScript" src="js/js.js"></script> 
 <body>
-<div class="canvas" style="opacity: .2">
+<!--<div class="canvas" style="opacity: .2">
 	<iframe frameborder="0" src="js/index.html" style="width: 100%; height: 100%"></iframe>
-	</div>
+	</div>-->
 <div class="loading">
   <div class="loadbox"> 
   	<img src="picture/loading.gif">
   </div>
 </div>
 
-<!---->
-<!--<div class="page-loader">
-                <div class="page-loader__spinner">
-                    <svg viewBox="25 25 50 50">
-                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
-                    </svg>
-                </div>
-            </div>-->
-<!---->
 <div class="head">
   <h1>智慧农业物联网管理平台</h1>
   <div class="weather">
@@ -52,7 +43,7 @@ $(document).ready(function(){
   <div class="breathe-btn righte" id="gotohome">点击进入旧版</div>
 	
 	<script>
-var t = null;
+   var t = null;
     t = setTimeout(time,1000);//開始运行
     function time()
     {
@@ -78,7 +69,19 @@ var t = null;
     	 <div class="boxall" style="height: 28.5vh">
     	 	<div class="alltitle">设备在线情况</div>
         
-		  	<div class="allnav" id="chart_1" ></div>
+        
+        <div id="radar">
+            	<div class="radarkong">
+            		<p class="tile-size-color">设备总数 :<span class="Totalequipment" style="color: white;"> 660个</span>统计时间 :<span style="color: white;"> 2019.03.26 15:28</span></p>
+            	</div>
+            	<div class="pie-chart" id="pie-chart"></div>
+            	<ul class="SiteStatusList">
+            		<li><i class="Statusnormal Statussame"></i>正常：<span style="color: white;">556</span></li>
+            		
+            		<li><i class="StatusOffline Statussame"></i>离线：<span style="color: white;">30</span></li>
+            	</ul>
+            </div> 
+        
         <div class="boxfoot">
 			
 		  </div>
@@ -87,12 +90,9 @@ var t = null;
       <div class="boxall" style="height: 28.5vh;overflow: hidden;">
         
         <div class="alltitle">设备在线情况</div>
-        <!--<div class="allnav" id="echart4"></div>
-        <div class="boxfoot"></div>-->
+
         <div class="navboxall">
-                            <!--<div class="wraptit">
-                                <span>设备</span><span>在线情况</span><span>时间</span>
-                            </div>-->
+ 
                             <div class="wrap">
                                 <ul  >
                                     <li><p><span>100021415</span><span>在线</span><span>2019-10-23</span></p></li>
@@ -113,33 +113,19 @@ var t = null;
                         </div>
                         <div class="boxfoot"></div>
       </div>
-      <!--<div class="boxall" style="height: 3.2rem">
-        <div class="alltitle">模块标题样式5</div>-->
-       <!-- <div class="allnav" id="echart2"></div>
-        <div class="boxfoot"></div>
-      </div>-->
+
     </li>
     <li>
     	 <div class="boxall" style="height: 58.5vh;background: rgba(255,255,255,.04) url(/images/line.png);border: 1px solid rgba(25,186,139,.17);position: relative;">
-      <!--<div class="bar">
-        <div class="barbox">
-          <ul class="clearfix">
-            <li class="pulll_left counter">12581189</li>
-            <li class="pulll_left counter">3912410</li>
-          </ul>
-        </div>
-        <div class="barbox2">
-          <ul class="clearfix">
-            <li class="pulll_left">2018年总收入情况 </li>
-            <li class="pulll_left">2018年总支出情况</li>
-          </ul>
-        </div>
-      </div>-->
+ 
       <div class="map">
         <div class="map1"><img src="picture/lbx.png"></div>
         <div class="map2"><img src="picture/jt.png"></div>
         <div class="map3"><img src="picture/map.png"></div>
-        <div class="map4" id="map_1"></div>
+        <!--<div class="map4" id="map_1"></div>-->
+        <div class="map-chart" id="map-chart">
+           			
+           		</div>
       </div>
       <div class="boxfoot"></div>
       </div>
@@ -156,26 +142,8 @@ var t = null;
       	
       	
       	<div class="alltitle">最新统计数据</div>
-        <!--<div id="chart_1" class="echart" style="width: 100%; height: 3.6rem;"></div>-->
         <div class="allnav" id=""  style="">
-        	<!--上传总数据数：
-        	<div class="barbox">
-        		
-                        <ul class="clearfix">
-                            <li class="pulll_left counter" style="width: 100%;">12581189</li>
-                        </ul>
-                       
-                    </div>
-                    今日上传数据数：
-                    <div class="barbox">
-                        <ul class="clearfix">
-                            <li class="pulll_left counter" style="width: 100%;">81189</li>
-                        </ul>
-                       
-                       <!--<ul class="clearfix">
-                            <li class="pulll_left counter">3912410</li>
-                            </ul>-->
-                    <!--</div>-->
+       
                     
                      <div class="bar">
                      	<div class="barbox2">
@@ -198,11 +166,6 @@ var t = null;
                             <li><h2 class="counter">996</h2><span>气象数据</span></li>
                         </ul>
                         <div style="border-bottom: 1px solid rgba(255,255,255,.1)"></div>
-                        <!--<ul class="clearfix">
-                            <li><h2>1824</h2><span>今日销售额</span></li>
-                            <li><h2>1920</h2><span>昨日销售额</span></li>
-                            <li><h2>19%</h2><span>环比增长</span></li>
-                        </ul>-->
 
 
                     </div>
@@ -213,11 +176,7 @@ var t = null;
         <div class="boxfoot"></div>
         
       </div>
-      <!--<div class="boxall" style="height: 3rem">
-        <div class="alltitle">模块标题样式3</div>
-        <div class="allnav" id="echart6"></div>
-        <div class="boxfoot"></div>
-      </div>-->
+  
     </li>
   </ul>
 </div>
@@ -229,7 +188,33 @@ var t = null;
             	<div class="boxall" style="height: 28.5vh">
         <div class="alltitle">基地1气候数据</div>
         <div class="allnav">
-        	<img style="width: 100%;height: 100%;" src="images/156177.png"/>
+        	    <div class="adc_bian">
+        		<img style="width: 100%;height: 100%;" src="http://testfood.cn:80/agro_monitor/img_500/\upload\bugImgs\191231095854658981.jpg"/>
+        	    </div>
+        	    <div class="adc_zhi">
+	        	    <div class="title1">检测数量：0</div>
+	        	    
+	        	    <div class="title2">唐县CQ10</div>
+	        	    
+	        	    <div class="title3">2019-12-31</div>
+	        	    
+	        	    <div class="title4">11:48:15</div>
+	        	    
+        	    </div>
+        	    
+        	
+        	
+        	
+        	<div class=" adc_bian2">
+        		<img style="width: 100%;height: 100%;" src="http://testfood.cn:80/agro_monitor/img_500/\upload\bugImgs\191231095854658981.jpg"/>
+        	</div>
+        	<div class=" adc_bian3">
+        		<img style="width: 100%;height: 100%;" src="http://testfood.cn:80/agro_monitor/img_500/\upload\bugImgs\191231095854658981.jpg"/>
+        	</div>
+        	<div class=" adc_bian4">
+        		<img style="width: 100%;height: 100%;" src="http://testfood.cn:80/agro_monitor/img_500/\upload\bugImgs\191231095854658981.jpg"/>
+        	</div>
+        	
         </div>
         <div class="boxfoot"></div>
       </div>
@@ -288,20 +273,18 @@ var t = null;
 </div>
 <div class="back"></div>
 <script src="js/rollSlide.js"></script>
-<!--<script type="text/javascript" src="js/online.js"></script>-->
+<script src="js/maps.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="js/china.js"></script> 
-<script type="text/javascript" src="js/area_echarts.js"></script> 
-<!--<script type="text/javascript" src="js/index.js"></script>-->
 <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
  <script type="text/javascript" src="js/jquery.countup.min.js"></script>
     <script type="text/javascript">
         $('.counter').countUp();
     </script>
 <script type="text/javascript">
-	setTimeout(function(){
-	$('#e').rollNoInterval().left();	
-	},3000)
-	
+//	setTimeout(function(){
+//	$('#e').rollNoInterval().left();	
+//	},3000)
+//	
 	
 	$("#gotohome").click(function(){
 		window.location.href="../home-admin/index.html"
@@ -371,44 +354,7 @@ function exitFullscreen() {
         document.webkitExitFullscreen();
     }
 }
-
-//监听window是否全屏，并进行相应的操作,支持esc键退出
-window.onresize = function() {
-//  var isFull=!!(document.mozFullScreen || 
-//      document.msFullscreenElement || document.fullscreenElement
-//  );//!document.webkitIsFullScreen都为true。因此用!!
-//  if (isFull==false) {
-//      $("#exitFullScreen").css("display","none");
-//      $("#fullScreen").css("display","");
-//      console.log("全屏");
-//  }else{
-//      $("#exitFullScreen").css("display","");
-//      $("#fullScreen").css("display","none");
-//      console.log("非全屏");
-//  }
-}
-
-document.addEventListener("fullscreenchange", function( event ) {
-	 console.log('进入全屏123');
-  if (document.fullscreenElement) {
-    console.log('进入全屏');
-  } else {
-    console.log('退出全屏');
-  }});
 	
-	
-	
-	
-	
-	 /* SCALE ABOUT near FLIPBOOK  /*/
-//      $("#fb7 #fb7-about").css('width',(WIDTH_BOOK/2)+'px');
-//      $("#fb7 #fb7-about").css('height',HEIGHT_BOOK+'px');
-//		if(RTL=='true'){
-//			$("#fb7 #fb7-about").css('right','0px');
-//			$("#fb7 #fb7-about").css({'transform-origin':'right 0','-ms-transform-origin':'right 0','-webkit-transform-origin':'right 0'});
-//		}else{
-//      	$("#fb7 #fb7-about").css({'transform-origin':'0 0','-ms-transform-origin':'0 0','-webkit-transform-origin':'0 0'});
-		
 </script>
  <script type="text/javascript" src="js/jquery.limarquee.js"></script>
  <script>
