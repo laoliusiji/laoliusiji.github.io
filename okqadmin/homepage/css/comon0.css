@@ -452,7 +452,7 @@ body {
 	left: 0.163rem;
 	top: 20%;
 	width: 28%;
-	height: 30%;
+	height: 35%;
 	border: solid 0.023rem #18679a;
 	/*background: red;*/
 }
@@ -461,7 +461,7 @@ body {
 	top: 20%;
 	right: 0.986rem;
 	width: 28%;
-	height: 30%;
+	height: 35%;
 	border: solid 0.023rem #18679a;
 	/*background: red;*/
 }
@@ -470,7 +470,7 @@ body {
 	bottom: 0.326rem;
 	left: 0.163rem;
 	width: 28%;
-	height: 30%;
+	height: 35%;
 	border: solid 0.023rem #18679a;
 	/*background: red;*/
 }
@@ -479,7 +479,7 @@ body {
 	bottom: 0.326rem;
 	right: 0.986rem;
 	width: 28%;
-	height: 30%;
+	height: 35%;
 	border: solid 0.023rem #18679a;
 	/*background: red;*/
 }
@@ -519,11 +519,35 @@ body {
 	top: 24%;
 	width: 100px;
 	height: 30%;
-	/*border: solid 0.023rem #18679a;*/
-	/*line-height: 1;*/
+
 	color: #00f0ff;
 }
-
+.adc_zhi2{
+	position: absolute;
+	left: 32%;
+	top: 62%;
+	width: 100px;
+	height: 30%;
+	color: #00f0ff;
+}
+.adc_zhi3{
+	position: absolute;
+	right: -2%;
+	top: 24%;
+	width: 100px;
+	height: 30%;
+	/*border: solid 0.023rem #18679a;*/
+	color: #00f0ff;
+}
+.adc_zhi4{
+	position: absolute;
+	right: -2%;
+	top: 62%;
+	width: 100px;
+	height: 30%;
+	/*border: solid 0.023rem #18679a;*/
+	color: #00f0ff;
+}
 
 .title1{
 	position: absolute;
